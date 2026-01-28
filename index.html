@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Processo Seletivo Simplificado n° XX/YYYY</h1>
+    
+    <div class="topbar">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Dados Pessoais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato e Endereço</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-5" id="formulario">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="nome" class="form-label"><strong>Nome <span class="text-danger">*</span></strong></label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="cpf" class="form-label"><strong>CPF <span class="text-danger">*</span></strong></label>
+                    <input type="text" class="form-control" id="cpf">
+                </div>
+                <div class="mb-3">
+                    <label for="rg" class="form-label"><strong>RG</strong></label>
+                    <input type="text" class="form-control" id="rg">
+                </div>
+                <div class="mb-3">
+                    <label for="estado-civil" class="form-label"><strong>Estado Civil</strong></label>
+                    <input type="text" class="form-control" id="estado-civil">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="filiacao-materna" class="form-label">Filiação Materna:</label>
+                    <input type="text" class="form-control" id="filiacao-materna">
+                </div>
+                <div class="mb-3">
+                    <label for="filiacao-paterna" class="form-label">Filiação Paterna:</label>
+                    <input type="text" class="form-control" id="filiacao-paterna">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-end">
+                <button class="btn btn-primary">Próximo passo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

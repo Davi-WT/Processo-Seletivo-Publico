@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #131313;
+    font-size: 1.5rem;
+}
+
+.topbar {
+    background-color: #ffffff;
+    padding-left: 10vw;
+}
+
+.nav {
+    gap: 0;
+}
+
+.nav-link {
+    color: #030a8e;
+    background-color: #e9ecef;
+    margin-right: 5px;
+    border: solid 3px #dee2e6;
+    border-top: none;
+    font-size: 2rem;
+}
+
+.nav-link.active {
+    color: #010546;
+    background-color: #ffffff;
+    border-right: none;
+    border-bottom: none;
+}
+
+.form-control {
+    border: 2px solid #131313;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #4a5fd9;
+    border: none;
+}
+
+#formulario {
+}
