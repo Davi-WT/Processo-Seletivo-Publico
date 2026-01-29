@@ -25,11 +25,11 @@ h3 {
     padding-bottom: 10px;
     color: #131313;
     font-size: 1.5rem;
-    border-bottom: #131313 2px solid;
+    border-bottom: #d8d8d8 1px solid;
 }
 
 .topbar {
-    background-color: #eaeaea;
+
     border: none;
     padding-left: 10vw;
 }
@@ -39,18 +39,15 @@ h3 {
 }
 
 .nav-link {
-    background-color: #eaeaea;
-    border-bottom: none;
-    border-radius: 0px;
+
     color: #010d50;
     font-size: 2rem;
 }
 
 .nav-link.active {
     background-color: #ffffff;
-    color: #010d50;
-    border-radius: 0px;
-    border: none;
+    border: 2px solid #4a5fd9;
+    color: #4a5fd9;
 }
 
 .form-control {
@@ -79,6 +76,21 @@ h3 {
     color: #4a5fd9;
 }  
 
+#diploma {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: #d8d8d8 2px 0px;
+    background-color: white;
+    font-size: 1.2rem;
+    margin: 3vh;
+    color: #4a5fd9;
+    align-content: center;
+    text-align: center;
+}  
+
+
 .opcaoCargo:hover {
     box-shadow: #4a5fd9 2px 2px;
     border: 2px solid #4a5fd9;
@@ -92,6 +104,10 @@ h3 {
 }
 
 .fa-file-text-o {
+    font-size: 3.4rem;
+
+}
+.fa-graduation-cap {
     font-size: 3.4rem;
 
 }
