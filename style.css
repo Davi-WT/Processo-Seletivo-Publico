@@ -46,3 +46,6 @@ h1 {
     border: none;
 }
  
+#colunaE {
+    border-right: solid 2px #d8d8d8;
+}
