@@ -5,15 +5,15 @@
 
 h1 {
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
     color: #131313;
     font-size: 1.5rem;
 }
 
 .topbar {
-    background-color: #ffffff;
+    background-color: #eaeaea;
+    border: none;
     padding-left: 10vw;
 }
 
@@ -22,19 +22,18 @@ h1 {
 }
 
 .nav-link {
-    color: #030a8e;
-    background-color: #e9ecef;
-    margin-right: 5px;
-    border: solid 3px #dee2e6;
-    border-top: none;
+    background-color: #eaeaea;
+    border-bottom: none;
+    border-radius: 0px;
+    color: #010d50;
     font-size: 2rem;
 }
 
 .nav-link.active {
-    color: #010546;
     background-color: #ffffff;
-    border-right: none;
-    border-bottom: none;
+    color: #010d50;
+    border-radius: 0px;
+    border: none;
 }
 
 .form-control {
@@ -46,6 +45,4 @@ h1 {
     background-color: #4a5fd9;
     border: none;
 }
-
-#formulario {
-}
+ 
