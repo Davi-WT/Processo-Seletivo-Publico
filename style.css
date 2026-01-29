@@ -85,6 +85,12 @@ h3 {
     cursor: pointer;
 }
 
+.form-control:hover, .form-control:focus {
+    box-shadow: #4a5fd9 2px 2px;
+    border: 2px solid #4a5fd9;
+    cursor: pointer;
+}
+
 .fa-file-text-o {
     font-size: 3.4rem;
 
