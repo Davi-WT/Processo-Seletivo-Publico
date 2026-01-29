@@ -5,10 +5,27 @@
 
 h1 {
     text-align: left;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
     color: #131313;
     font-size: 1.5rem;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 10px;
+    color: #131313;
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: #131313;
+    font-size: 1.5rem;
+    border-bottom: #131313 2px solid;
 }
 
 .topbar {
@@ -48,4 +65,27 @@ h1 {
  
 #colunaE {
     border-right: solid 2px #d8d8d8;
+}
+
+.opcaoCargo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: #d8d8d8 2px 0px;
+    background-color: white;
+    font-size: 1.2rem;
+    margin: 3vh;
+    color: #4a5fd9;
+}  
+
+.opcaoCargo:hover {
+    box-shadow: #4a5fd9 2px 2px;
+    border: 2px solid #4a5fd9;
+    cursor: pointer;
+}
+
+.fa-file-text-o {
+    font-size: 3.4rem;
+
 }

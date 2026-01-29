@@ -3,54 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Processo Seletivo Simplificado n° XX/YYYY</h1>
+    <h2>Seleção de Cargo</h2>
+    <h3>Escolha o cargo desejado </h3>
     
-    <div class="topbar">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Dados Pessoais</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato e Endereço</a>
-            </li>
-        </ul>
-    </div>
 
     <div class="tabs"></div>
 
     <div class="container mt-5" id="formulario">
         <div class="row">
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="nome" class="form-label"><strong>Nome <span class="text-danger">*</span></strong></label>
-                    <input type="text" class="form-control" id="nome">
+            <div class="col-md-4">
+                <div class="mb-6">
+                    <button class="opcaoCargo" id="administrativo">
+                        <i class="fa fa-file-text-o"></i><br>
+                        <span>Administrativo</span>
+                    </button>
                 </div>
-                <div class="mb-3">
-                    <label for="cpf" class="form-label"><strong>CPF <span class="text-danger">*</span></strong></label>
-                    <input type="text" class="form-control" id="cpf">
-                </div>
-                <div class="mb-3">
-                    <label for="rg" class="form-label"><strong>RG</strong></label>
-                    <input type="text" class="form-control" id="rg">
-                </div>
-                <div class="mb-3">
-                    <label for="estado-civil" class="form-label"><strong>Estado Civil</strong></label>
-                    <input type="text" class="form-control" id="estado-civil">
+                <div class="mb-6">
+                    <button class="opcaoCargo" id="Monitor">
+                        <i class="fa fa-file-text-o"></i> <br>
+                        <span>Monitor</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="filiacao-materna" class="form-label"><strong>Filiação Materna:</strong></label>
-                    <input type="text" class="form-control" id="filiacao-materna">
+
+            <div class="col-md-4">
+                <div class="mb-6">
+                    <button class="opcaoCargo">
+                        <i class="fa fa-file-text-o"></i><br>
+                        <span>Motorista</span>
+                    </button>
                 </div>
-                <div class="mb-3">
-                    <label for="filiacao-paterna" class="form-label"><strong></strong>Filiação Paterna:</strong></label>
-                    <input type="text" class="form-control" id="filiacao-paterna">
+                <div class="mb-6">
+                    <button class="opcaoCargo">
+                        <i class="fa fa-file-text-o"></i><br>
+                        <span>Professor</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="mb-6">
+                    <button class="opcaoCargo">
+                        <i class="fa fa-file-text-o"></i><br>
+                        <span>Servente</span>
+                    </button>
+                </div>
+                <div class="mb-6">
+                    <button class="opcaoCargo">
+                        <i class="fa fa-file-text-o"></i><br>
+                        <span>Uianes</span>
+                    </button>
                 </div>
             </div>
         </div>
