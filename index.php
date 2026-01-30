@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="./style.css" rel="stylesheet" >
     <title>Document</title>
 </head>
 <body>
     <h1 >Processo Seletivo Simplificado n° XX/YYYY</h1>
+    <h3>Preencha o formulário </h3>
     
-    <div class="topbar">
-        <ul class="nav nav-tabs">
-            <li class="nav-item nav-tabs">
-                <a class="nav-link active" href="./index.html">Dados Pessoais</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./contatoeEndereco.html">Contato e Endereço</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="nav nav-tabs topbar">
+        <li class="nav-item active nav-link">Dados Pessoais</li>
+        <li class="nav-item nav-link">Contato e Endereço</li>
+        <li class="nav-item nav-link">Seleção de Cargo</li>
+        <li class="nav-item nav-link">Qualificações</li>
+    </ul>
 
-    <div class="tabs"></div>
 
     <div class="container mt-5" id="formulario">
         <div class="row">
@@ -54,15 +50,12 @@
                 </div>
             </div>
         </div>
-        
-        <?php
+    </div>
+
+    <?php
             include './proximoPasso.inc';
             proximoPasso('index');
-        ?>
-
-
-
-    </div>
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

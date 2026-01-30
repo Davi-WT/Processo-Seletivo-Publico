@@ -10,9 +10,16 @@
 </head>
 <body>
     <h1>Processo Seletivo Simplificado n° XX/YYYY</h1>
-    <h2>Qualificações</h2>
     <h3>Upload de Documentos </h3>
     
+    <div class="topbar" >
+        <ul class="nav nav-tabs">
+            <li class="nav-item nav-link">Dados Pessoais</li>
+            <li class="nav-item nav-link">Contato e Endereço</li>
+            <li class="nav-item nav-link">Seleção de Cargo</li>
+            <li class="nav-item active nav-link">Qualificações</li>
+        </ul>
+    </div>
 
     <div class="tabs"></div>
     <div class="container mt-5" id="formulario">
@@ -22,13 +29,14 @@
                     <i class="fa fa-graduation-cap"></i><br>
                     <span>Administrativo</span>
                 </div>
-               
-        <div class="row mt-4">
-            <div class="col-md-12 text-end">
-                <a href="qualificacoes.html"><button class="btn btn-primary">Próximo passo</button></a>
             </div>
         </div>
     </div>
+               
+    <?php
+            include './proximoPasso.inc';
+            proximoPasso('qualificacoes');
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

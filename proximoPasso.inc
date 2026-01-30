@@ -1,16 +1,13 @@
+
+
 <?php
     function proximoPasso($pagina) 
     {
         $proxpagina = '';
-        if ($pagina == 'index') {
-            $proxPagina = './contatoeEndereco.html';
-        } else if ($pagina == 'contatoeEndereco') {
-            $proxPagina = './selecaoDeCargo.html';
-        } else if ($pagina == 'selecaoDeCargo') {
-            $proxPagina = './qualificacoes.html';
-        } else {
-            $proxPagina = './index.html';
-        }
+        if ($pagina == 'index') $proxPagina = './contatoeEndereco.php';
+        else if ($pagina == 'contatoeEndereco') $proxPagina = './selecaoDeCargo.php';
+        else if ($pagina == 'selecaoDeCargo') $proxPagina = './qualificacoes.php';
+        else $proxPagina = './index.php';
     
         echo 
         '    
