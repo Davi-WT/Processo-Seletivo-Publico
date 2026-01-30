@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./estilo.css">
     <title>Document</title>
 </head>
 <body>
     <h1 >Processo Seletivo Simplificado n° XX/YYYY</h1>
     <h3>Preencha o formulário </h3>
     
-    <ul class="nav nav-tabs topbar">
-        <li class="nav-item active nav-link">Dados Pessoais</li>
-        <li class="nav-item nav-link">Contato e Endereço</li>
-        <li class="nav-item nav-link">Seleção de Cargo</li>
-        <li class="nav-item nav-link">Qualificações</li>
+    <ul class="nav nav-tabs">
+        <li class="nav-item active">Dados Pessoais</li>
+        <li class="nav-item ">Contato e Endereço</li>
+        <li class="nav-item ">Seleção de Cargo</li>
+        <li class="nav-item ">Qualificações</li>
     </ul>
 
 

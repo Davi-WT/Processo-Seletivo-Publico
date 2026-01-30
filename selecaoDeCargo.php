@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Processo Seletivo Simplificado n° XX/YYYY</h1>
     <h3>Escolha o cargo desejado </h3>
 
-    <div class="topbar" >
-        <ul class="nav nav-tabs">
-            <li class="nav-item nav-link">Dados Pessoais</li>
-            <li class="nav-item nav-link">Contato e Endereço</li>
-            <li class="nav-item active nav-link">Seleção de Cargo</li>
-            <li class="nav-item  nav-link">Qualificações</li>
-        </ul>
-    </div>
-
-    
+    <ul class="nav nav-tabs">
+        <li class="nav-item passed">Dados Pessoais</li>
+        <li class="nav-item passed">Contato e Endereço</li>
+        <li class="nav-item active">Seleção de Cargo</li>
+        <li class="nav-item ">Qualificações</li>
+    </ul>
 
     <div class="container mt-5" id="formulario">
         <div class="row">
