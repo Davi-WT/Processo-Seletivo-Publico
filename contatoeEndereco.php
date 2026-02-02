@@ -16,22 +16,31 @@
         <li class="nav-item active">Contato e Endereço</li>
         <li class="nav-item ">Seleção de Cargo</li>
         <li class="nav-item ">Qualificações</li>
-    </ul>
+    </ul>   
+    <form action="./selecaoDeCargo.php" method="post">
+
+        <input type="hidden" name="nome" value="<?php echo $_POST['nome']; ?>">
+        <input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
+        <input type="hidden" name="rg" value="<?php echo $_POST['rg']; ?>">
+        <input type="hidden" name="estado-civil" value="<?php echo $_POST['estado-civil']; ?>">
+        <input type="hidden" name="filiacao-materna" value="<?php echo $_POST['filiacao-materna']; ?>">
+        <input type="hidden" name="filiacao-paterna" value="<?php echo $_POST['filiacao-paterna']; ?>">
 
     <div class="container mt-5" id="formulario">
         <div class="row">
             <div class="col-md-6" id="colunaE">
                 <div class="mb-3">
+                
                     <label for="email" class="form-label"><strong>Email <span class="text-danger">*</span></strong></label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="telefone" class="form-label"><strong>Telefone <span class="text-danger">*</span></strong></label>
-                    <input type="number" class="form-control" id="telefone">  <!-- TEXTO OU NUMERO --> 
+                    <input type="number" class="form-control" id="telefone" name="telefone" required>  <!-- TEXTO OU NUMERO --> 
                 </div>
                 <div class="mb-3">
                     <label for="rua" class="form-label"><strong>Rua</strong></label>
-                    <input type="text" class="form-control" id="rua">
+                    <input type="text" class="form-control" id="rua" name="rua">
                 </div>
                 <div class="mb-3">
                     <label for="numero" class="form-label"><strong>Número</strong></label>
@@ -75,10 +84,13 @@
             </div>
         </div>
 
-     <?php
-            include './proximoPasso.inc';
-            proximoPasso('contatoeEndereco');
-    ?>
+     <div style="position: fixed; right: 4vw; bottom: 4vh;">
+        <button class="btn btn-primary"><input type="submit" value="Próximo Passo" class="btn btn-primary"></button>
+    </div>
+
+
+
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

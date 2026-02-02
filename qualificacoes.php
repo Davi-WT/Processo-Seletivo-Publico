@@ -20,6 +20,21 @@
         <li class="nav-item active">Qualificações</li>
     </ul>
 
+    <form action="./info.php" method="post">
+
+        <input type="hidden" name="nome" value="<?php echo $_POST['nome']; ?>">
+        <input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
+        <input type="hidden" name="rg" value="<?php echo $_POST['rg']; ?>">
+        <input type="hidden" name="estado-civil" value="<?php echo $_POST['estado-civil']; ?>">
+        <input type="hidden" name="filiacao-materna" value="<?php echo $_POST['filiacao-materna']; ?>">
+        <input type="hidden" name="filiacao-paterna" value="<?php echo $_POST['filiacao-paterna']; ?>">
+        <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+        <input type="hidden" name="telefone" value="<?php echo $_POST['telefone']; ?>">
+        <input type="hidden" name="rua" value="<?php echo $_POST['rua']; ?>">
+        <input type="hidden" name="numero" value="<?php echo $_POST['numero']; ?>">
+        <input type="hidden" name="estado" value="<?php echo $_POST['estado']; ?>">
+        <input type="hidden" name="cargo" value="<?php echo $_POST['cargo']; ?>">
+
     <div class="tabs"></div>
     <div class="container mt-5" id="formulario">
         <div class="row justify-content-center">
@@ -28,9 +43,7 @@
                     <i class="fa fa-graduation-cap"></i><br>
                     <label for="diploma-upload" class="form-label">Diploma <br>(PDF ou Imagem)</label>
                     
-                    <form action="" class="documento">
-                        <input type="file" class="form-control" id="diploma-upload">
-                    </form>
+                    <input type="file" class="form-control" id="diploma-upload" name="diploma" required>
                 </div>
             </div>
 
@@ -39,9 +52,7 @@
                     <i class="fa fa-id-card"></i><br>
                     <label for="diploma-upload" class="form-label">RG <br>(PDF ou Imagem)</label>
                     
-                    <form action="" class="documento">
-                        <input type="file" class="form-control" id="diploma-upload">
-                    </form>
+                    <input type="file" class="form-control" id="diploma-upload" name="rg" required>
                 </div>
             </div>
             </div>
@@ -49,10 +60,10 @@
         </div>
     </div>
                
-    <?php
-            include './proximoPasso.inc';
-            proximoPasso('qualificacoes');
-    ?>
+    <div style="position: fixed; right: 4vw; bottom: 4vh;">
+        <button class="btn btn-primary"><input type="submit" value="Enviar" class="btn btn-primary"></button>
+    </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
