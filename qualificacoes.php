@@ -20,7 +20,8 @@
         <li class="nav-item active">Qualificações</li>
     </ul>
 
-    <form action="./info.php" method="post">
+    <form enctype="multipart/form-data" action="upload/upload.php" method="post">
+
 
         <input type="hidden" name="nome" value="<?php echo $_POST['nome']; ?>">
         <input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
@@ -46,17 +47,6 @@
                     <input type="file" class="form-control" id="diploma-upload" name="diploma" required>
                 </div>
             </div>
-
-            <div class="col-md-6 d-flex justify-content-center">
-                <div class="mb-6 arquivo">
-                    <i class="fa fa-id-card"></i><br>
-                    <label for="diploma-upload" class="form-label">RG <br>(PDF ou Imagem)</label>
-                    
-                    <input type="file" class="form-control" id="diploma-upload" name="rg" required>
-                </div>
-            </div>
-            </div>
-
         </div>
     </div>
                
